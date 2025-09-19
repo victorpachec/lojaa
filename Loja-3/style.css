@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte principal e body */
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(160deg, #3e2723, #5d4037, #8d6e63);
+    color: #f8f5f2;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Container principal */
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Título principal */
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #efebe9;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    transition: transform 0.3s ease;
+}
+
+.title:hover {
+    transform: scale(1.05);
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 1.8rem;
+    color: #d7ccc8;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Botões */
+.centralizar-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo base dos botões */
+.botao {
+    padding: 16px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Botão marrom claro (Cadastrar) */
+.btn-cadastrar {
+    background: linear-gradient(145deg, #a1887f, #6d4c41);
+}
+
+.btn-cadastrar:hover {
+    background: linear-gradient(145deg, #bcaaa4, #5d4037);
+    transform: translateY(-3px);
+}
+
+/* Botão escuro (Listar) */
+.btn-listar {
+    background: linear-gradient(145deg, #4e342e, #3e2723);
+}
+
+.btn-listar:hover {
+    background: linear-gradient(145deg, #6d4c41, #2e1e1a);
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+.footer {
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(30, 20, 15, 0.9);
+    color: #ccc;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.6);
+    z-index: 99;
+}
+
+/* Ícone animado */
+.footer-icon {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 1.3rem;
+    transition: transform 0.4s ease;
+}
+
+.footer-icon:hover {
+    transform: rotate(15deg) scale(1.1);
+    cursor: default;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .botao {
+        width: 90%;
+    }
+
+    .centralizar-botoes {
+        flex-direction: column;
+    }
+}
